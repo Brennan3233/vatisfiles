@@ -2,7 +2,7 @@
   "name": "Indianapolis+ ATCT",
   "id": "635ae002-ff05-4c61-b7c6-ed19272a3aac",
   "updateURL": "https://raw.githubusercontent.com/Indy-Center/vatisfiles/refs/heads/main/indianapolis-atct-vatis.json",
-  "updateSerial": 2025112402,
+  "updateSerial": 2025121601,
   "composites": [
     {
       "id": "6ea51b65-5793-44b7-b8eb-1ff967940866",
@@ -349,9 +349,15 @@
           "enabled": false
         },
         {
-          "description": "PUMPKIN PIE AND PATTERNS",
+          "description": "RAMP CLOSED",
           "ordinal": 5,
-          "text": "VISIT ALL FOUR FEATURED AIRPORTS FOR A SPECIAL INDY CENTER DISCORD ROLE.",
+          "text": "FEDEX RAMP CONTROL CLOSED. AC AT FEDEX RAMP CTC ATC AT EXIT POINT WHEN READY TO TAXI.",
+          "enabled": true
+        },
+        {
+          "description": "RAMP OPEN",
+          "ordinal": 5,
+          "text": "FEDEX RAMP CONTROL OPEN. AC DEPARTING FEDEX RAMP CTC RAMP CONTROL 130.80 PRIOR TO PUSHBACK. AC ARRIVING FEDEX RAMP CTC RAMP CONTROL AFTER LANDING FOR ENTRY SPOT ASSIGNMENT. VISIT https://wiki.flyindycenter.com/ind-images/ind_ramp_north.svg FOR NORTH RAMP OR https://wiki.flyindycenter.com/ind-images/ind_ramp_south.svg FOR SOUTH RAMP.",
           "enabled": false
         }
       ],
