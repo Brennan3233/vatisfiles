@@ -2,7 +2,7 @@
   "name": "Indianapolis+ ATCT",
   "id": "635ae002-ff05-4c61-b7c6-ed19272a3aac",
   "updateURL": "https://raw.githubusercontent.com/Indy-Center/vatisfiles/refs/heads/main/indianapolis-atct-vatis.json",
-  "updateSerial": 2026020301,
+  "updateSerial": 2026021000,
   "composites": [
     {
       "id": "6ea51b65-5793-44b7-b8eb-1ff967940866",
@@ -347,6 +347,18 @@
           "ordinal": 4,
           "text": "WIND SHEAR ADZYS IN EFCT.",
           "enabled": false
+        },
+        {
+          "description": "RAMP OPEN",
+          "ordinal": 5,
+          "text": "FEDEX RAMP CONTROL OPEN. AC DEPARTING FEDEX RAMP CTC RAMP CONTROL 130.80 PRIOR TO PUSHBACK. AC ARRIVING FEDEX RAMP CTC RAMP CONTROL AFTER LANDING FOR ENTRY SPOT ASSIGNMENT. VISIT HTTP://AIRPORTS.INDY.CENTER/IND.",
+          "enabled": false
+        },
+        {
+          "description": "RAMP CLOSED",
+          "ordinal": 6,
+          "text": "FEDEX RAMP CONTROL CLOSED. AC AT FEDEX RAMP CTC ATC AT EXIT POINT WHEN READY TO TAXI.",
+          "enabled": true
         }
       ],
       "atisFormat": {
