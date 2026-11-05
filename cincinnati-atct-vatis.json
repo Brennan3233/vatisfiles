@@ -2,7 +2,7 @@
   "name": "Cincinnati+ ATCT",
   "id": "18a107ce-36f1-46d3-8921-ba121701e1eb",
   "updateURL": "https://raw.githubusercontent.com/Indy-Center/vatisfiles/refs/heads/main/cincinnati-atct-vatis.json",
-  "updateSerial": 2026062301,
+  "updateSerial": 2026110501,
   "composites": [
     {
       "id": "a9d067bd-d593-427a-914c-88b3aad23498",
@@ -26,7 +26,7 @@
       "presets": [
         {
           "id": "96a29b34-efa0-4b17-8eae-0bddcf21d984",
-          "name": "NORTH+27",
+          "name": "NORTHWEST",
           "airportConditions": "DEPG RWY 27, RWY 36R. ALL AIRCRAFT SHALL READBACK RUNWAY HOLD SHORT INSTRUCTION.",
           "notams": "BIRD ACTIVITY VCNTY ARPT.",
           "template": "CINCINATTI NORTHERN KENTUCKY INTERNATIONAL AIRPORT DEPARTURE INFORMATION [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
@@ -36,7 +36,7 @@
         },
         {
           "id": "5bf70a09-f19e-4e72-8595-b85d691a8309",
-          "name": "SOUTH+27",
+          "name": "SOUTHWEST",
           "airportConditions": "DEPG RWY 27, RWY 18L. ALL AIRCRAFT SHALL READBACK RUNWAY HOLD SHORT INSTRUCTION.",
           "notams": "BIRD ACTIVITY VCNTY ARPT.",
           "template": "CINCINATTI NORTHERN KENTUCKY INTERNATIONAL AIRPORT DEPARTURE INFORMATION [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
@@ -65,6 +65,16 @@
           }
         },
         {
+          "id": "1688c385-6049-48f0-9422-934ea6813b9d",
+          "name": "EAST",
+          "airportConditions": "DEPG RWY 9. ALL AIRCRAFT SHALL READBACK RUNWAY HOLD SHORT INSTRUCTION.",
+          "notams": "BIRD ACTIVITY VCNTY ARPT.",
+          "template": "CINCINATTI NORTHERN KENTUCKY INTERNATIONAL AIRPORT DEPARTURE INFORMATION [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
+          "externalGenerator": {
+            "enabled": false
+          }
+        },
+        {
           "id": "fb585b99-9571-42da-bc45-2696e02ebb73",
           "name": "WEST",
           "airportConditions": "DEPG RWY 27. ALL AIRCRAFT SHALL READBACK RUNWAY HOLD SHORT INSTRUCTION.",
@@ -75,34 +85,44 @@
           }
         },
         {
-          "id": "1688c385-6049-48f0-9422-934ea6813b9d",
-          "name": "EAST",
-          "airportConditions": "DEPG RWY 9. ALL AIRCRAFT SHALL READBACK RUNWAY HOLD SHORT INSTRUCTION.",
+          "id": "fb585b99-9571-42da-bc45-2696e02ebb73",
+          "name": "36R ONLY",
+          "airportConditions": "DEPG RWY 36R. ALL AIRCRAFT SHALL READBACK RUNWAY HOLD SHORT INSTRUCTION.",
           "notams": "BIRD ACTIVITY VCNTY ARPT.",
           "template": "CINCINATTI NORTHERN KENTUCKY INTERNATIONAL AIRPORT DEPARTURE INFORMATION [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
           "externalGenerator": {
             "enabled": false
           }
-        }
+        },
+        {
+          "id": "fb585b99-9571-42da-bc45-2696e02ebb73",
+          "name": "18L ONLY",
+          "airportConditions": "DEPG RWY 18L. ALL AIRCRAFT SHALL READBACK RUNWAY HOLD SHORT INSTRUCTION.",
+          "notams": "BIRD ACTIVITY VCNTY ARPT.",
+          "template": "CINCINATTI NORTHERN KENTUCKY INTERNATIONAL AIRPORT DEPARTURE INFORMATION [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
+          "externalGenerator": {
+            "enabled": false
+          }
+        }    
       ],
       "contractions": [],
       "airportConditionDefinitions": [],
       "notamDefinitions": [
         {
           "description": "RAMP OPEN COMBINED",
-          "ordinal": 2,
+          "ordinal": 1,
           "text": "CVG RAMP CONTROL IN USE. AC AT AIR CARRIER TERMINAL OR CARGO RAMP CTC RAMP 130.90 PRIOR TO PUSH. VISIT HTTP://AIRPORTS.INDY.CENTER/CVG.",
           "enabled": false
         },
         {
           "description": "RAMP OPEN ALL",
-          "ordinal": 3,
+          "ordinal": 2,
           "text": "CVG RAMP CONTROL IN USE. AC AT AIR CARRIER TERMINAL CTC RAMP 130.90 PRIOR TO PUSH. ACFT AT AMAZON RAMP CTC RAMP 130.50 PRIOR TO PUSH. AC AT DHL RAMP CTC 129.47 PRIOR TO PUSH. VISIT HTTP://AIRPORTS.INDY.CENTER/CVG.",
           "enabled": false
         },
         {
           "description": "RAMP CLOSED",
-          "ordinal": 1,
+          "ordinal": 3,
           "text": "RAMP CONTROL CLOSED.",
           "enabled": true
         },
@@ -393,26 +413,46 @@
           "externalGenerator": {
             "enabled": false
           }
-        }
+        },
+        {
+          "id": "fb585b99-9571-42da-bc45-2696e02ebb73",
+          "name": "36R ONLY",
+          "airportConditions": "EXPECT ILS APPROACH TO RWY 36R. ALL AIRCRAFT SHALL READBACK RUNWAY HOLD SHORT INSTRUCTION.",
+          "notams": "BIRD ACTIVITY VCNTY ARPT.",
+          "template": "CINCINATTI NORTHERN KENTUCKY INTERNATIONAL AIRPORT DEPARTURE INFORMATION [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
+          "externalGenerator": {
+            "enabled": false
+          }
+        },
+        {
+          "id": "fb585b99-9571-42da-bc45-2696e02ebb73",
+          "name": "18L ONLY",
+          "airportConditions": "EXPECT ILS APPROACH TO RWY 18L. ALL AIRCRAFT SHALL READBACK RUNWAY HOLD SHORT INSTRUCTION.",
+          "notams": "BIRD ACTIVITY VCNTY ARPT.",
+          "template": "CINCINATTI NORTHERN KENTUCKY INTERNATIONAL AIRPORT DEPARTURE INFORMATION [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
+          "externalGenerator": {
+            "enabled": false
+          }
+        }    
       ],
       "contractions": [],
       "airportConditionDefinitions": [],
       "notamDefinitions": [
         {
           "description": "RAMP OPEN COMBINED",
-          "ordinal": 2,
+          "ordinal": 1,
           "text": "CVG RAMP CONTROL IN USE. AC AT AIR CARRIER TERMINAL OR CARGO RAMP CTC 130.90 PRIOR TO ENTRY. VISIT HTTP://AIRPORTS.INDY.CENTER/CVG.",
           "enabled": false
         },
         {
           "description": "RAMP OPEN ALL",
-          "ordinal": 3,
+          "ordinal": 2,
           "text": "CVG RAMP CONTROL IN USE. AC AT AIR CARRIER TERMINAL CTC 130.90 PRIOR TO ENTRY. AC AT SPOT 54 or 75 CTC 130.37 PRIOR TO ENTRY. AC AT SPOT 76 CTC 130.50 PRIOR TO ENTRY. AC AT SPOTS 51, 52, OR 55 CTC 129.47 PRIOR TO ENTRY. VISIT HTTP://AIRPORTS.INDY.CENTER/CVG.",
           "enabled": false
         },
         {
           "description": "RAMP CLOSED",
-          "ordinal": 1,
+          "ordinal": 3,
           "text": "RAMP CONTROL CLOSED.",
           "enabled": true
         },
